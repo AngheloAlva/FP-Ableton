@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  --yellow: #FBFFA7;
+  --orange: #FF764D;
+  --sky-blue: #B1C5FF;
+  --purple: #D5B3FF;
+  --green: #B6FFC0;
+  --blue: #0000FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono',monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+hr {
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em .5em 1em;
+}
+
+.main-nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-nav-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+  font-size: 1em;
+}
+
+.main-nav-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-nav-user a {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+  font-size: .8rem;
+  letter-spacing: -1px;
+}
+
+.static-main-nav {
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.static-main-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: .8rem;
+  margin: 0 0 0 1.3em;
+}
+/* 
+.page-body {
+  padding: 0 4em;
+} */
+
+header {
+  background-image: url('./assets/411311.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 8vw 0 8vw;
+  position: relative;
+  min-height: calc(102vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+h1 {
+  color: var(--orange);
+  font-size: 7em
+}
+
+.paragraph {
+  margin: 8vh 16vw 0 16vw;
+}
+
+.paragraph a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.paragraph p {
+  font-size: .9em;
+}
+
+.yellow-container {
+  margin: 8vh 0;
+  display: flex;
+  align-items: center;
+}
+
+.cube-yellow {
+  background-color: var(--yellow);
+  width: 39em;
+  height: 39em;
+  margin-left: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.yellow-image {
+  background-image: url('./assets/271330.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 28em;
+  height: 28em;
+  margin-left: 8vw;
+  z-index: 5;
+  position: absolute;
+}
+
+.yellow-image-2 {
+  background-image: url('./assets/401017.png');
+  z-index: 5;
+  width: 22rem;
+  height: 16.5rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-right: 8vw;
+}
+
+.video {
+  height: 25rem;
+  display: flex;
+  background-image: url('./assets/480088.png');
+  background-size: cover;
+  background-position: 80% 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  margin: 8vh 16vw 10vh 16vw;
+  font-size: .8em;
+}
+
+.video-container p {
+  margin: 1em;
+}
+
+.play-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.green-container {
+  margin: 8vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.green-cube {
+  background-color: var(--green);
+  width: 39rem;
+  height: 50rem;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 8vw;
+}
+
+.green-image {
+  background-image: url('./assets/356019.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 22rem;
+  height: 16.5rem;
+}
+
+.green-image2 {
+  background-image: url('./assets/15456.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 22rem;
+  height: 16.5rem;
+}
+
+.green-image3 {
+  background-image: url('./assets/306579.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+  margin-right: 8vw;
+}
+
+.image-container {
+  background-image: url('./assets/55555.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 44.5rem;
+  height: 25rem;
+  margin: 8vh 0 0 8vw;
+}
+
+.purple-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.purple-cube {
+  background-color: var(--purple);
+  height: 39rem;
+  width: 100%;
+  margin: 8vh 16vw;
+}
+
+.purple-image {
+  background-image: url('./assets/641118.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 22rem;
+  height: 16.5rem;
+  position: absolute;
+  margin-right: 39rem;
+}
+
+.purple-image2 {
+  background-image: url('./assets/721834.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+}
+
+.about-jobs {
+  margin: 8vh;
+  background-color: var(--sky-blue);
+}
+
+.about-jobs-image {
+  background-image: url('./assets/796141.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 33rem;
+}
+
+.about-jobs-text {
+  padding: 8vw;
+}
+
+.about-jobs-text h3 {
+  margin: 0 0 1em 0;
+}
+
+.about-jobs-text a {
+  text-decoration: none;
+  color: var(--blue);
+}
