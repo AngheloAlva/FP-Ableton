@@ -23,12 +23,28 @@ hr {
   margin: 0;
 }
 
+.navs-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  display: flex;
+  flex-direction: column;
+  z-index: 15;
+}
+
+.navs-container.hide {
+  top: -6.1em;
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1em 1em .5em 1em;
+  height: 3em;
+  width: 100%;
 }
 
 .main-nav-links {
@@ -59,9 +75,14 @@ hr {
 }
 
 .static-main-nav {
-  height: 3em;
   display: flex;
   align-items: center;
+  width: 100%;
+  transition: top 0.3s;
+  height: 3em;
+  background-color: #FFFFFF;
+  opacity: .9;
+  z-index: 10;
 }
 
 .static-main-nav a {
@@ -70,17 +91,13 @@ hr {
   font-size: .8rem;
   margin: 0 0 0 1.3em;
 }
-/* 
-.page-body {
-  padding: 0 4em;
-} */
 
 header {
   background-image: url('./assets/411311.png');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin: 0 8vw 0 8vw;
+  margin: 6em 8vw 0;
   position: relative;
   min-height: calc(102vh - 120px);
   display: flex;

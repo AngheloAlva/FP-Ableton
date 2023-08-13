@@ -5,13 +5,46 @@ import { StaticNavBar } from '../components/StaticNavBar'
 import { FaPlay, FaChevronRight } from 'react-icons/fa6'
 import './App.css'
 import { Footer } from '../components/Footer'
+import { useEffect, useState } from 'react'
 
 function App () {
+  const [show, setShow] = useState(true)
+  const [showFirstNav, setShowFirstNav] = useState(true)
+
+  useEffect(() => {
+    let lastScrollTop = 0
+    const mainNavHeigth = document.querySelector('.main-nav').offsetHeight
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+
+      if (scrollTop > lastScrollTop) {
+        setShow(false)
+      } else {
+        setShow(true)
+        if (scrollTop > mainNavHeigth) {
+          setShowFirstNav(false)
+        } else {
+          setShowFirstNav(true)
+        }
+      }
+
+      lastScrollTop = scrollTop
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
-      <NavBar />
-      <hr />
-      <StaticNavBar />
+      <div className={`navs-container ${show ? '' : 'hide'}`}>
+        <div style={{ display: showFirstNav ? 'block' : 'none' }}>
+          <NavBar />
+        </div>
+        <hr />
+        <StaticNavBar />
+      </div>
       <div className='page-body'>
         <header>
           <h1>Ableton</h1>
