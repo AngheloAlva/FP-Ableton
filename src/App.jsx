@@ -45,7 +45,7 @@ function App () {
         <hr />
         <StaticNavBar />
       </div>
-      <div className='page-body'>
+      <main className='page-body'>
         <header>
           <h1>Ableton</h1>
         </header>
@@ -123,7 +123,7 @@ function App () {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   )
