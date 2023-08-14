@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: #f3f3f3;
 }
 
@@ -30,14 +29,9 @@ hr {
 
 .navs-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   max-width: 100em;
   transition: top 0.3s;
-  display: flex;
-  flex-direction: column;
   z-index: 15;
 }
 
@@ -320,6 +314,7 @@ h1 {
 .about-jobs-text a {
   text-decoration: none;
   color: var(--blue);
+  font-weight: bold;
 }
 
 .separator {
@@ -331,6 +326,7 @@ footer {
   padding: 8vh 8vw 4vh;
   background-color: #FFFFFF;
   letter-spacing: -1px;
+  max-width: 100em;
 }
 
 footer h3 {
@@ -340,7 +336,7 @@ footer h3 {
 
 .footer-part-1 {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-ul {
@@ -360,10 +356,25 @@ footer h3 {
   color: #000000;
 }
 
+.footer-ul-2 {
+  list-style-type: none;
+  width: 22rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: .9rem;
+  gap: .5rem;
+}
+
+.footer-ul-2 a {
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+}
+
 .footer-newsteller {
   font-size: .9rem;
-  max-width: 22rem;
-  width: 22rem;
 }
 
 .footer-newsteller p {
@@ -461,4 +472,210 @@ footer h3 {
 
 .footer-logo h4 {
   font-weight: normal;
+}
+
+@media (min-width: 1680px) {
+  .main-nav-user a {
+    font-size: 1.2em;
+  }
+
+  .paragraph {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .paragraph h3 {
+    font-size: 1.8em;
+  }
+
+  .paragraph a, .paragraph p {
+    font-size: 1.2em;
+  }
+
+  .cube-yellow {
+    width: 58.3em;
+    height: 58.3em;
+  }
+
+  .yellow-image {
+    width: 41.6em;
+    height: 41.6em;
+  }
+
+  .yellow-image-2 {
+    width: 33.3em;
+    height: 25em;
+  }
+
+  .video {
+    height: 28rem;
+  }
+
+  .video-container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .green-cube {
+    height: 75em;
+    width: 58em;
+  }
+
+  .green-image {
+    width: 33.3em;
+    height: 25em;
+  }
+
+  .green-image2 {
+    width: 33.3em;
+    height: 25em;
+  }
+
+  .green-image3 {
+    width: 41.6em;
+    height: 41.6em;
+  }
+
+  .image-container {
+    height: 46.8em;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .purple-cube {
+    height: 58.3em;
+    width: 65em;
+  }
+
+  .purple-image {
+    width: 33.3em;
+    height: 25em;
+    margin-left: 7vw;
+  }
+
+  .purple-image2 {
+    width: 41.6em;
+    height: 41.6em;
+  }
+
+  .about-jobs {
+    margin: 16vh 7vw 0;
+    display: flex;
+  }
+
+  .about-jobs-image {
+    height: 41.6em;
+    width: 41.6em;
+  }
+
+  .about-jobs-text {
+    padding: 7vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.3em;
+  }
+
+  .footer-ul, .footer-newsteller, .footer-select, .footer-part-2 li, .footer-part-2 a {
+    font-size: 1.2rem;
+  }
+
+  .footer-ul {
+    min-width: 22rem;
+  }
+
+  .footer-part-2 ul {
+    min-width: 22rem;
+  }
+
+  .footer-newsteller input {
+    padding: .8rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-newsteller button {
+    padding: .8rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-ul-2 {
+    min-width: 30rem;
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 1680px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1400px) {
+  footer {
+    padding: 4vh;
+  }
+
+  .footer-part-1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-ul {
+    margin-bottom: 2rem;
+  }
+
+  .footer-ul-2 {
+    margin-bottom: 3rem;
+  }
+
+  .footer-part-2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-part-2 ul {
+    margin-bottom: 3rem;
+  }
+
+  .footer-part-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .footer-part-3 ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-part-3 ul {
+    margin-bottom: 1rem;
+  }
+
+  .footer-select select {
+    padding: .7rem;
+  }
+
+  .footer-ul, .footer-ul-2, .footer-newsteller, .footer-part-2 a, .footer-part-2 li, .footer-select p {
+    font-size: 1.2rem;
+  }
+
+  .footer-newsteller {
+    max-width: 100%;
+  }
+
+  .footer-newsteller input {
+    padding: .7rem;
+    width: 85%;
+    font-size: 1rem;
+  }
+
+  .footer-newsteller button {
+    padding: .7rem;
+    width: 15%;
+    font-size: 1rem
+  }
 }

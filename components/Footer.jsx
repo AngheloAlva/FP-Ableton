@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href='#'><FaSquareInstagram color='orange' size={45} /></a>
             </li>
           </ul>
-          <ul className='footer-ul'>
+          <ul className='footer-ul-2'>
             <li><strong>Education</strong></li>
             <li><a href='#'>Offers for students and teachers <FaChevronRight size={8} /></a></li>
             <li><a href='#'>Ableton for the Classroom <FaChevronRight size={8} /></a></li>

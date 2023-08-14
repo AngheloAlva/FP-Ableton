@@ -18,7 +18,7 @@ function App () {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop
 
-      if (scrollTop > lastScrollTop) {
+      if (scrollTop > lastScrollTop && scrollTop > mainNavHeigth * 2) {
         setShow(false)
       } else {
         setShow(true)
